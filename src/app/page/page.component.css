@@ -1,0 +1,147 @@
+.main-container {
+  margin: 0;
+  padding: 0;
+  /* Use Flexbox for layout */
+  height: 100vh; /* Full viewport height */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.container {
+  justify-content: center;
+  width: 80%;
+  padding-left: 20%;
+  font-family: "Lobster", cursive;
+  line-height: 1.6;
+  margin-top: 60px;
+}
+
+.sidebar {
+  width: 20%; /* Fixed width for the sidebar */
+  padding-left: 40%;
+
+  padding-top: 400px;
+  color: white;
+  display: grid;
+  gap: 0;
+}
+
+.desc {
+  color: whitesmoke;
+}
+
+.name {
+  font-size: small;
+  font-family: "Lobster", cursive;
+}
+
+.snowflakes {
+  float: right;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10%;
+  color: white;
+  font-size: 10px;
+  opacity: 0.8;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+.snowflake:nth-child(2) {
+  left: 20%;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(3) {
+  left: 30%;
+  animation-duration: 5s;
+  animation-delay: 2s;
+}
+.snowflake:nth-child(4) {
+  left: 40%;
+  animation-duration: 6s;
+  animation-delay: 0.5s;
+}
+.snowflake:nth-child(5) {
+  left: 50%;
+  animation-duration: 5s;
+  animation-delay: 1.5s;
+}
+.snowflake:nth-child(6) {
+  left: 60%;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+.snowflake:nth-child(7) {
+  left: 70%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(8) {
+  left: 80%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+.snowflake:nth-child(9) {
+  left: 90%;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+.snowflake:nth-child(10) {
+  left: 60%;
+  animation-duration: 6s;
+  animation-delay: 0.5s;
+}
+
+.subheader {
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+
+  background: rgba(255, 255, 255, 0.3); /* More opaque white */
+  color: white;
+
+ 
+
+
+  font-weight: bold; /* Adjust as needed */
+
+  border-radius: 10px; /* Rounded corners */
+  backdrop-filter: blur(15px); /* Stronger blur for depth */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border */
+}
+
+/* Additional styles for ul and li if needed */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
